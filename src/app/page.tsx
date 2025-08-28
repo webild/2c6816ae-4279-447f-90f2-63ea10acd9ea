@@ -1,4 +1,4 @@
-"use client" 
+"use client"
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import SimpleHero from '@/components/sections/layouts/hero/SimpleHero';
 import MinimalAbout from '@/components/sections/layouts/about/MinimalAbout';
@@ -6,7 +6,7 @@ import SimpleKPIBento from '@/components/bento/SimpleKPIBento';
 import BentoFAQ from '@/components/sections/layouts/faq/BentoFAQ';
 import { useState } from 'react';
 
-const contactForm = () => {
+const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -49,7 +49,7 @@ export default function Home() {
       </section>
       <section id="contact" className="bg-white py-18">
         <h2 className="text-3xl font-bold">Contact Us</h2>
-        {contactForm()}
+        <ContactForm />
       </section>
     </SiteThemeProvider>
   );
